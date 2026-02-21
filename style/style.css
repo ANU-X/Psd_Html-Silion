@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Touch";
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f0f0ef;
+  padding: 1rem;
+}
+.logo span {
+  color: red;
+  font-size: larger;
+}
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.nav-item li {
+  list-style: none;
+}
+.nav-item li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.nav-item li a:hover {
+  color: brown;
+}
+.navCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.navCard i {
+  font-size: larger;
+  cursor: pointer;
+}
+.shop-cart-counting {
+  position: relative;
+}
+.shop-cart-counting sub {
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  border: none;
+  font-size: 8pt;
+  background: red;
+  text-align: center;
+  color: white;
+}
+.nav-button {
+  display: none;
+}
+/* ------------------------------hero-------------------- */
+
+.bgher {
+  width: 100%;
+  background-position: bottom;
+  background: linear-gradient(90deg, #ff8bbb, #ffda89);
+  margin-bottom: 12rem;
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  gap: 5rem;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.hero-text h1 {
+  font-size: xx-large;
+  margin: 2rem auto;
+}
+.hero-text h6 {
+  letter-spacing: 0.5rem;
+  color: #585858;
+}
+.hero-text button {
+  padding: 0.6rem 2rem;
+  border: 2px solid #da3131;
+  background: #da3131;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  border: 2px solid #da3131;
+  background: white;
+  color: #da3131;
+}
+.hero-img img {
+  width: 70%;
+  height: auto;
+}
+/* -------------------------featured--------------- */
+#Featured {
+  margin-bottom: 12rem;
+}
+#Featured h1 {
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#F-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.F-col {
+  width: 320px;
+  height: 520px;
+}
+.f-img {
+  position: relative;
+  width: 320px;
+  height: 440px;
+}
+.f-icon {
+  position: absolute;
+  bottom: 5rem;
+  left: 35%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.f-img i {
+  padding: 0.5rem;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.f-img i:hover {
+  background: #da3131;
+  color: white;
+}
+.f-img:hover .f-icon {
+  opacity: 1;
+}
+.f-img img {
+  width: 100%;
+  height: 100%;
+}
+.f-text {
+  text-align: center;
+}
+.f-text h5 {
+  margin-top: 1rem;
+  font-family: sans-serif;
+  color: #5c5c5c;
+}
+.f-text p {
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.f-text i {
+  font-size: small;
+  color: #da3131;
+  margin: 0.5rem auto;
+}
+/* --------------------------------adds------------------------ */
+#adds {
+  background: radial-gradient(#f0eee4, #dad8cf);
+  width: 100%;
+  height: auto;
+  margin-bottom: 14rem;
+}
+.adds {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 5rem;
+}
+.add-text h1 {
+  font-family: TildaScript-SemiBold;
+  font-size: xx-large;
+}
+.add-text h3 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: x-large;
+  margin: 2rem auto;
+}
+.add-text button {
+  padding: 0.6rem 2rem;
+  border: 2px solid #da3131;
+  background: #da3131;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.add-text button:hover {
+  background: none;
+  border: 2px solid #da3131;
+  color: #da3131;
+}
+
+.add-img img {
+  width: 80%;
+  height: 100%;
+  margin-right: 0%;
+  right: 0%;
+}
+
+/* -----------------------------------Most popular--------- */
+#Popular {
+  margin-bottom: 12rem;
+}
+#Popular h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: x-large;
+}
+#P-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.P-col {
+  width: 300px;
+  height: 400px;
+}
+.P-img {
+  position: relative;
+  width: 300px;
+  height: 360px;
+}
+.P-icon {
+  position: absolute;
+  bottom: 5rem;
+  left: 30%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.P-img i {
+  padding: 0.5rem;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.P-img i:hover {
+  background: #da3131;
+  color: white;
+}
+.P-img:hover .P-icon {
+  opacity: 1;
+}
+.P-img img {
+  width: 100%;
+  height: 100%;
+}
+.P-text {
+  text-align: center;
+}
+.P-text h5 {
+  margin-top: 1rem;
+  font-family: sans-serif;
+  color: #5c5c5c;
+}
+.P-text p {
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.P-text i {
+  font-size: small;
+  color: #da3131;
+  margin: 0.5rem auto;
+}
+/* -------------------------tram & condition---------------- */
+.tram {
+  margin-bottom: 10rem;
+}
+
+#tram-condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+#tram-condition div {
+  width: 250px;
+  height: 200px;
+  border: 1px solid rgb(214, 214, 214);
+}
+#tram-condition img {
+  margin-top: 2rem;
+}
+#tram-condition h3 {
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 200;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* -----------------------------------Trending--------- */
+
+#Trending h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: x-large;
+}
+#T-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.T-col {
+  width: 300px;
+  height: 470px;
+}
+.T-img {
+  position: relative;
+  width: 300px;
+  height: 360px;
+}
+.T-icon {
+  position: absolute;
+  bottom: 5rem;
+  left: 30%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.T-img i {
+  padding: 0.5rem;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.T-img i:hover {
+  background: #da3131;
+  color: white;
+}
+.T-img:hover .T-icon {
+  opacity: 1;
+}
+.T-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.T-text {
+  text-align: center;
+}
+.T-text h5 {
+  margin-top: 1rem;
+  font-family: sans-serif;
+  color: #5c5c5c;
+}
+.T-text p {
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.T-text i {
+  font-size: small;
+  color: #da3131;
+  margin: 0.5rem auto;
+}
+/* -------------------------footers-------------------- */
+.footers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+  width: 100%;
+  background: #dbd4d4;
+}
+.footers-text {
+  margin: 8rem auto;
+}
+.footers-text h2 {
+  margin-bottom: 2.5rem;
+  font-size: large;
+  font-family: sans-serif;
+}
+.footers-text a {
+  display: block;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: #6e6e6e;
+}
+.footers-text a:hover {
+  color: #da3131;
+}
+.apps-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 5px;
+}
+.apps-store i {
+  font-size: x-large;
+}
+.android {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  gap: 6px;
+  background: white;
+  color: #da3131;
+  cursor: pointer;
+}
+.android:hover {
+  background: #da3131;
+  color: white;
+}
+.apple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  gap: 6px;
+  background: white;
+  color: #da3131;
+  cursor: pointer;
+}
+.apple:hover {
+  background: #da3131;
+  color: white;
+}
+
+.socal-media i {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+.socal-media i:hover {
+  background: #da3131;
+  color: white;
+}
+.footer-line {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.footers-text h3 {
+  margin-bottom: 1.5rem;
+}
+.copy-right {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem auto;
+}

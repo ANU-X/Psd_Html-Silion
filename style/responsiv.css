@@ -1,0 +1,103 @@
+/*----------------------------responsiv--------------*/
+@media only screen and (max-width: 885px) {
+  #navbar {
+    position: relative;
+  }
+  .nav-item {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    height: 400px;
+    left: 30%;
+    top: 80%;
+    margin-top: -900px;
+    background: rgb(255, 178, 178);
+    transition: 1s ease;
+  }
+  .nav-button {
+    display: block;
+  }
+  .actives {
+    margin: 0 auto;
+  }
+}
+
+/* -----------hero-------------- */
+@media only screen and (max-width: 885px) {
+  #hero {
+    flex-direction: column;
+  }
+  .hero-img {
+    order: -1;
+  }
+  .hero-img img {
+    width: 80%;
+    height: auto;
+  }
+}
+/* ---------Featured----------- */
+@media only screen and (max-width: 885px) {
+  #F-grid {
+    flex-direction: column;
+  }
+}
+/* ----------------adds--------------------------- */
+@media only screen and (max-width: 885px) {
+  .adds {
+    flex-direction: column;
+  }
+}
+
+/* ---------most popular----------- */
+@media only screen and (max-width: 885px) {
+  #P-grid {
+    flex-direction: column;
+  }
+}
+/* -------------------------tram & condition----------------- */
+@media only screen and (max-width: 885px) {
+  #tram-condition {
+    flex-direction: column;
+  }
+}
+/* -------------footer------------------------ */
+@media only screen and (max-width: 767px) {
+  .footers {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+  .footers-text {
+    margin: 3rem auto;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .hero-text h1 {
+  font-size: 26pt;
+}
+#Featured h1 {
+  font-size: xx-large;
+}
+.add-text h1 {
+  font-size: 26pt;
+}
+#Popular h1{
+  font-size: xx-large;
+}
+#Trending h1{
+  font-size: xx-large;
+}
+}
+@media only screen and (min-width: 992px){
+  .hero-text h1 {
+  font-size: 2.5rem;
+}
+.add-text h1 {
+  font-size: 5rem;
+}
+}
